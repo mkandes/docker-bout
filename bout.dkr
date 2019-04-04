@@ -158,3 +158,8 @@ RUN git submodule update --init --recursive \
  && make check-unit-tests \
  && make clean-unit-tests \
  && rm tests/unit/serial_tests
+
+# ----------------------------------------------------------------
+# # Make filesystem mount points for Comet
+# ----------------------------------------------------------------
+RUN mkdir /cvmfs /oasis /projects /scratch
